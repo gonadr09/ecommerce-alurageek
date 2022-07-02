@@ -1,8 +1,10 @@
 :root{
     --color-white: #F5F5FE;
     --color-grey: #CCCCCC;
-    --color-blue: #2A7AE4;
     --color-light-blue: #E3EEFD;
+    --color-blue: #2A7AE4;
+    --color-dark-blue: #1B65C5;
+    --color-red: #e42a2a;
 }
 
 /*
@@ -32,6 +34,7 @@ body{
 
 .menu{
     background-color: var(--color-white);
+    box-shadow: 0 0 5px #00000060;
 }
 
 .menu__nav{
@@ -41,6 +44,13 @@ body{
     align-items: center;
 
     height: 5rem;
+}
+
+.menu__logo-box{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu__logo-img{
@@ -84,17 +94,18 @@ body{
     height: 1.1rem;
 }
 
-.menu__login-button{
-    padding: .5rem .8rem;
+.menu__button{
+    padding: .6rem 1rem;
     background-color: transparent;
     color: var(--color-blue);
     border: 1px solid var(--color-blue);
     border-radius: .2rem;
     outline: none;
     transition: .2s;
+    font-size: .9rem;
 }
 
-.menu__login-button:hover{
+.menu__button:hover{
     background-color: var(--color-blue);
     color: var(--color-white);
     cursor: pointer;
@@ -119,6 +130,8 @@ body{
 }
 
 .hero__title-box{
+    display: flex;
+    flex-flow: column nowrap;
     color: var(--color-white);
 }
 
@@ -127,10 +140,10 @@ body{
     font-size: 2.5rem;
     text-transform: uppercase;
     text-shadow:
-    1px 1px 5px #000,
-    -1px 1px 5px #000,
-    1px -1px 5px #000,
-    -1px -1px 5px #000;
+    1px 1px 5px #00000080,
+    -1px 1px 5px #00000080,
+    1px -1px 5px #00000080,
+    -1px -1px 5px #00000080;
 }
 
 .hero_subtitle{
@@ -138,24 +151,26 @@ body{
     font-size: 1.2rem;
     margin: .5rem 0;
     text-shadow:
-    1px 1px 5px #000,
-    -1px 1px 5px #000,
-    1px -1px 5px #000,
-    -1px -1px 5px #000;
+    1px 1px 5px #00000080,
+    -1px 1px 5px #00000080,
+    1px -1px 5px #00000080,
+    -1px -1px 5px #00000080;
 }
 
 .hero__action-button{
-    padding: .5rem .8rem;
+    padding: .8rem 1rem;
     background-color: var(--color-blue);
     color: var(--color-white);
     border: none;
     border-radius: .2rem;
     box-shadow: 0 0 10px #00000080;
     outline: none;
+    width: 8rem;
+    text-align: center;
 }
 
 .hero__action-button:hover{
-    background-color: #1b65c5;
+    background-color: var(--color-dark-blue);
     cursor: pointer;
 }
 
@@ -164,8 +179,8 @@ body{
 ==========================================================================
 */
 
-main{
-    margin: 3rem 0;
+.main__eshop{
+    padding: 3rem 0;
 }
 
 /*
@@ -184,7 +199,7 @@ main{
     align-items: center;
     margin-bottom: 1rem;
     padding-bottom: .5rem ;
-    border-bottom: 1px solid #CCC;
+    border-bottom: 1px solid var(--color-grey);
 }
 
 .category__title{
@@ -194,13 +209,18 @@ main{
 
 .category__seemore{
     color: var(--color-blue);
+    transition: .2s;
+}
+
+.category__seemore:hover{
+    color: var(--color-dark-blue);
 }
 
 .category__carousel{
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    gap: 2rem;
+    gap: 1.47rem;
     padding: 1rem;
     overflow-x: hidden;
 }
@@ -239,31 +259,6 @@ main{
     padding: .5rem .5rem 1rem .5rem;
 }
 
-.category__actions-box{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    gap: .5rem;
-    padding: .5rem;
-}
-
-.category__addcart{
-    width: 100%;
-    padding: .5rem .8rem;
-    background-color: transparent;
-    color: var(--color-blue);
-    border: 1px solid var(--color-blue);
-    border-radius: .2rem;
-    outline: none;
-    transition: .2s;
-}
-
-.category__addcart:hover{
-    background-color: var(--color-blue);
-    color: var(--color-white);
-    cursor: pointer;
-}
-
 /*
 4) Footer
 ==========================================================================
@@ -293,6 +288,10 @@ main{
 .footer__item-list > a{
     color: #000;
     font-size: .8rem;
+}
+
+.footer__item-list > a:hover{
+    color: var(--color-blue);
 }
 
 .footer__form-title{
@@ -329,19 +328,28 @@ main{
     padding: .5rem .8rem;
     background-color: var(--color-blue);
     color: var(--color-white);
-    border: none;
     border-radius: .2rem;
+    border: none;
     outline: none;
+    width: 9rem;
+}
+
+.footer__form-submit:hover{
+    background-color: var(--color-dark-blue);
+    cursor: pointer;
 }
 
 .footer__developed{
+    display: flex;
+    justify-content: center;
     background-color: var(--color-white);
     padding: 1rem 0;
     font-size: .8rem;
+    font-weight: 500;
 }
 
-.footer__developed p{
-    text-align: center;
+.footer__developed a:hover{
+    color: var(--color-blue);
 }
 
 /*
@@ -376,7 +384,7 @@ RESPONSIVE
     }
     
     .menu__logo-img{
-        height: 2.2rem;
+        height: 2.5rem;
     }
 
     .footer__container{
@@ -397,4 +405,141 @@ RESPONSIVE
     .footer__form-box{
         width: 80%;
     }
+}
+
+/*
+LOGIN
+==========================================================================
+*/
+
+.login{
+    margin: 5rem 0 5rem 0;
+}
+
+.login__container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.login__form-title{
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.login__form{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.login__form-input{
+    width: 100%;
+    margin-bottom: 1.5rem;
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: .9rem;
+    color: #808080;
+    outline: none;
+    border: none;
+    resize: none;
+}
+
+.login__form-input::placeholder{
+    color: #AAAAAA;
+}
+
+.login__form-submit{
+    padding: .8rem 1.5rem;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border: none;
+    border-radius: .2rem;
+    outline: none;
+    font-size: .9rem;
+}
+
+.login__form-submit:hover{
+    background-color: var(--color-dark-blue);
+    cursor: pointer;
+}
+
+/*
+LOGIN
+==========================================================================
+*/
+
+.category__button{
+    padding: .8rem 1.5rem;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border: none;
+    border-radius: .2rem;
+    outline: none;
+    font-size: .9rem;
+    transition: .2s;
+}
+
+.category__button:hover{
+    background-color: var(--color-dark-blue);
+    cursor: pointer;
+}
+
+.all-products__stock{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 1.47rem;
+    padding: 1rem;
+}
+
+.category__actions-box{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: .5rem;
+    padding: 1rem .5rem .5rem .5rem;
+}
+
+.category__product-edit{
+    width: 100%;
+    padding: .2rem .8rem;
+    background-color: transparent;
+    color: var(--color-blue);
+    border: 1px solid var(--color-blue);
+    border-radius: .2rem;
+    outline: none;
+    font-size: 1rem;
+    transition: .2s;
+}
+
+.category__product-edit:hover{
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.category__product-delete{
+    width: 100%;
+    padding: .2rem .8rem;
+    background-color: transparent;
+    color: var(--color-red);
+    border: 1px solid var(--color-red);
+    border-radius: .2rem;
+    outline: none;
+    font-size: 1rem;
+    transition: .2s;
+}
+
+.category__product-delete:hover{
+    background-color: var(--color-red);
+    color: var(--color-white);
+    cursor: pointer;
 }

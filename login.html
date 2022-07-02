@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek | Login</title>
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/f570856479.js" crossorigin="anonymous"></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <section class="menu">
+            <nav class="menu__nav container">
+                <figure class="menu__logo-box">
+                    <img class="menu__logo-img" src="./img/Logo.svg" alt="alurageek">
+                </figure>
+                <div class="menu__search-box">
+                    <input type="search" class="menu__search-input" placeholder="¿Qué deseas buscar?">
+                    <i class="fa-solid fa-magnifying-glass menu__search-icon"></i>
+                </div>
+                <div class="menu__cart-login-box">
+                    <a class="menu__button" href="./index.html">Volver <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        
+        <section class="login">
+            <div class="login__container container">
+                <h1 class="login__form-title">Iniciar Sesión</h1>
+                <form class="login__form" action="./admin.html">
+                    <label class="login__form-label" for="email" ></label>
+                    <input class="login__form-input" type="email" id="email" name="email" autocomplete="off" placeholder="Escriba su correo electrónico" required>
+                    <label class="login__form-label" for="password" ></label>
+                    <input class="login__form-input" type="password" id="password" name="password" autocomplete="off" placeholder="Escriba su contraseña" required>
+                    <button class="login__form-submit" type="submit" id="login">Ingresar</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <img class="footer__logo-img" src="./img/Logo.svg" alt="alurageek">
+            <ul class="footer__list">
+                <li class="footer__item-list"><a href="#">Quiénes somos</a></li>
+                <li class="footer__item-list"><a href="#">Política de privacidad</a></li>
+                <li class="footer__item-list"><a href="#">Programa de fidelidad</a></li>
+                <li class="footer__item-list"><a href="#">Nuestras tiendas</a></li>
+                <li class="footer__item-list"><a href="#">Franquicia</a></li>
+                <li class="footer__item-list"><a href="#">Anuncie aquí</a></li>
+            </ul>
+            <div class="footer__form-box">
+                <h3 class="footer__form-title">Hable con nosotros</h3>
+                <form class="footer__form" action="">
+                    <label class="footer__form-label" for="name" >
+                        <p class="footer__form-field">Nombre:</p>
+                        <input class="footer__form-input" type="text" id="name" name="name" autocomplete="off" required>
+                    </label>
+                    <label class="footer__form-label" for="message">
+                        <p class="footer__form-field">Mensaje:</p>
+                        <textarea class="footer__form-input" type="text" id="message" name="message" rows="5" autocomplete="off" required></textarea>
+                    </label>
+                    <button class="footer__form-submit" type="submit" id="submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__developed">
+            <a href="https://gonadr09.github.io/Portafolio-Alura/">Developed by GDR | Dev. 💻</a>
+        </div>
+    </footer>
+
+</body>
+</html>
+<!--
+
+    https://www.figma.com/file/NUd563IRcuwUGyFGTwPP5W/AluraGeek?node-id=1%3A34
+
+-->
