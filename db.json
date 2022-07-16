@@ -1,0 +1,68 @@
+{
+  "products": [
+    {
+      "id": "fc8b0131-6520-489d-a0c2-dfcccd7f0ac1",
+      "name": "Mario Kart 8 Deluxe",
+      "category": "StarWars",
+      "price": "15999",
+      "url": "./img/juegos-switch-1.jpg",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere accusantium ullam animi labore aliquid fugit dicta, id ad natus deserunt impedit magni veritatis, fugiat necessitatibus quo commodi ea blanditiis nostrum! Recusandae repudiandae obcaecati asperiores exercitationem ducimus nesciunt quo. Voluptas hic facere officia magnam nulla voluptatem recusandae tempora sed incidunt dolor!"
+    },
+    {
+      "id": "fc8b0131-6520-489d-a0c2-dfcccd7f0ac2",
+      "name": "Pokemon Arceus",
+      "category": "StarWars",
+      "price": "16000",
+      "url": "./img/juegos-switch-2.jpg",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere accusantium ullam animi labore aliquid fugit dicta, id ad natus deserunt impedit magni veritatis, fugiat necessitatibus quo commodi ea blanditiis nostrum! Recusandae repudiandae obcaecati asperiores exercitationem ducimus nesciunt quo. Voluptas hic facere officia magnam nulla voluptatem recusandae tempora sed incidunt dolor!"
+    },
+    {
+      "id": "fc8b0131-6520-489d-a0c2-dfcccd7f0ac3",
+      "name": "Animal Crossing",
+      "category": "Consolas",
+      "price": "15999",
+      "url": "./img/juegos-switch-3.jpg",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere accusantium ullam animi labore aliquid fugit dicta, id ad natus deserunt impedit magni veritatis, fugiat necessitatibus quo commodi ea blanditiis nostrum! Recusandae repudiandae obcaecati asperiores exercitationem ducimus nesciunt quo. Voluptas hic facere officia magnam nulla voluptatem recusandae tempora sed incidunt dolor!"
+    },
+    {
+      "name": "Luigi Mansion 3",
+      "category": "Consolas",
+      "url": "./img/juegos-switch-4.jpg",
+      "price": "123",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere accusantium ullam animi labore aliquid fugit dicta, id ad natus deserunt impedit magni veritatis, fugiat necessitatibus quo commodi ea blanditiis nostrum! Recusandae repudiandae obcaecati asperiores exercitationem ducimus nesciunt quo. Voluptas hic facere officia magnam nulla voluptatem recusandae tempora sed incidunt dolor!",
+      "id": "fc8b0131-6520-489d-a0c2-dfcccd7f0ac4"
+    },
+    {
+      "id": "fc8b0131-6520-489d-a0c2-dfcccd7f0ac5",
+      "name": "Pokémon Diamante",
+      "category": "Diversos",
+      "price": "15999",
+      "url": "./img/juegos-switch-5.jpg",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere accusantium ullam animi labore aliquid fugit dicta, id ad natus deserunt impedit magni veritatis, fugiat necessitatibus quo commodi ea blanditiis nostrum! Recusandae repudiandae obcaecati asperiores exercitationem ducimus nesciunt quo. Voluptas hic facere officia magnam nulla voluptatem recusandae tempora sed incidunt dolor!"
+    },
+    {
+      "id": "fc8b0131-6520-489d-a0c2-dfcccd7f0ac6",
+      "name": "Mario Tennis Aces",
+      "category": "Diversos",
+      "price": "15999",
+      "url": "./img/juegos-switch-6.jpg",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere accusantium ullam animi labore aliquid fugit dicta, id ad natus deserunt impedit magni veritatis, fugiat necessitatibus quo commodi ea blanditiis nostrum! Recusandae repudiandae obcaecati asperiores exercitationem ducimus nesciunt quo. Voluptas hic facere officia magnam nulla voluptatem recusandae tempora sed incidunt dolor!"
+    },
+    {
+      "id": "fc8b0131-6520-489d-a0c2-dfcccd7f0ac7",
+      "name": "Pokémon Espada",
+      "category": "otros",
+      "price": "15999",
+      "url": "./img/juegos-switch-8.jpg",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere accusantium ullam animi labore aliquid fugit dicta, id ad natus deserunt impedit magni veritatis, fugiat necessitatibus quo commodi ea blanditiis nostrum! Recusandae repudiandae obcaecati asperiores exercitationem ducimus nesciunt quo. Voluptas hic facere officia magnam nulla voluptatem recusandae tempora sed incidunt dolor!"
+    },
+    {
+      "name": "Super Smash Bros",
+      "category": "otros",
+      "url": "./img/juegos-switch-7.jpg",
+      "price": "12999",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere accusantium ullam animi labore aliquid fugit dicta, id ad natus deserunt impedit magni veritatis, fugiat necessitatibus quo commodi ea blanditiis nostrum! Recusandae repudiandae obcaecati asperiores exercitationem ducimus nesciunt quo. Voluptas hic facere officia magnam nulla voluptatem recusandae tempora sed incidunt dolor!",
+      "id": "fc8b0131-6520-489d-a0c2-dfcccd7f0ac9"
+    }
+  ]
+}

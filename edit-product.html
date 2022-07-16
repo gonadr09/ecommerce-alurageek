@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek | Login</title>
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/f570856479.js" crossorigin="anonymous"></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/page-icon.png" type="image/x-icon" />
+</head>
+<body>
+    <header>
+        <section class="menu">
+            <nav class="menu__nav container">
+                <figure class="menu__logo-box">
+                    <img class="menu__logo-img" src="./img/Logo.svg" alt="alurageek">
+                </figure>
+                <div class="menu__search-box">
+                    <input type="search" class="menu__search-input" placeholder="¿Qué deseas buscar?">
+                    <i class="fa-solid fa-magnifying-glass menu__search-icon"></i>
+                </div>
+                <div class="menu__cart-login-box">
+                    <a class="menu__button" href="./admin.html">Volver <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        
+        <section class="add-product">
+            <div class="add-product__container container">
+                <h1 class="add-product__form-title">Editar producto</h1>
+                <form class="add-product__form">
+                    <label class="add-product__form-label" for="product-name" >
+                        <p class="add-product__form-field">Nombre del producto:</p>
+                        <input class="add-product__form-input" type="text" id="product-name" name="product-name" autocomplete="off" required>
+                    </label>
+                    <label class="add-product__form-label" for="category" >
+                        <p class="add-product__form-field">Categoría:</p>
+                        <input class="add-product__form-input" type="text" id="category" name="category" autocomplete="off" required>
+                    </label>
+                    <label class="add-product__form-label" for="img" >
+                        <p class="add-product__form-field">URL de la imágen:</p>
+                        <input class="add-product__form-input" type="text" id="img" name="url" required>
+                    </label>
+                    <label class="add-product__form-label" for="price" >
+                        <p class="add-product__form-field">Precio del producto:</p>
+                        <div class="add-product__price-box">
+                            <span>$</span>
+                            <input class="add-product__form-input" type="number" id="price" name="price" autocomplete="off" required>
+                        </div>
+                    </label>
+                    <label class="add-product__form-label" for="description">
+                        <p class="add-product__form-field">Descripción del producto:</p>
+                        <textarea class="add-product__form-input" type="text" id="description" name="description" rows="5" autocomplete="off" required></textarea>
+                    </label>
+                    <button class="add-product__form-submit" type="submit" id="submit">Editar producto</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <img class="footer__logo-img" src="./img/Logo.svg" alt="alurageek">
+            <ul class="footer__list">
+                <li class="footer__item-list"><a href="#">Quiénes somos</a></li>
+                <li class="footer__item-list"><a href="#">Política de privacidad</a></li>
+                <li class="footer__item-list"><a href="#">Programa de fidelidad</a></li>
+                <li class="footer__item-list"><a href="#">Nuestras tiendas</a></li>
+                <li class="footer__item-list"><a href="#">Franquicia</a></li>
+                <li class="footer__item-list"><a href="#">Anuncie aquí</a></li>
+            </ul>
+            <div class="footer__form-box">
+                <h3 class="footer__form-title">Hable con nosotros</h3>
+                <form class="footer__form" action="">
+                    <label class="footer__form-label" for="name" >
+                        <p class="footer__form-field">Nombre:</p>
+                        <input class="footer__form-input" type="text" id="name" name="name" autocomplete="off" required>
+                    </label>
+                    <label class="footer__form-label" for="message">
+                        <p class="footer__form-field">Mensaje:</p>
+                        <textarea class="footer__form-input" type="text" id="message" name="message" rows="5" autocomplete="off" required></textarea>
+                    </label>
+                    <button class="footer__form-submit" type="submit" id="submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__developed">
+            <a href="https://gonadr09.github.io/Portafolio-Alura/">Developed by GDR | Dev. 💻</a>
+        </div>
+    </footer>
+    <script src="./controllers/editProduct.js" type="module"></script>
+</body>
+</html>
+<!--
+
+    https://www.figma.com/file/NUd563IRcuwUGyFGTwPP5W/AluraGeek?node-id=1%3A34
+
+-->

@@ -1,0 +1,25 @@
+{
+  "name": "4--alurageek-e-commerce",
+  "version": "1.0.0",
+  "description": "---\r <p align=\"center\" >\r      <img width=\"800\" heigth=\"400\" src=\"https://user-images.githubusercontent.com/91544872/153603780-b5e5b462-893b-471c-9b7f-7f57ad2aaff3.png\">\r </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gonadr09/ecommerce-alurageek.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gonadr09/ecommerce-alurageek/issues"
+  },
+  "homepage": "https://github.com/gonadr09/ecommerce-alurageek#readme",
+  "dependencies": {
+    "json-server": "^0.17.0",
+    "uuid": "^8.3.2"
+  }
+}
