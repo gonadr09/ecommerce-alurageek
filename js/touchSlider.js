@@ -1,7 +1,7 @@
 let isDown = false;
 let startX;
 let scrollLeft;
-const slider = document.querySelector('.category__carousel');
+const sliders = document.querySelectorAll('.category__carousel');
 
 const end = () => {
 	isDown = false;
@@ -17,21 +17,45 @@ const start = (e) => {
 
 const move = (e) => {
 	if(!isDown) return;
-
   e.preventDefault();
   const x = e.pageX || e.touches[0].pageX - slider.offsetLeft;
   const dist = (x - startX);
   slider.scrollLeft = scrollLeft - dist;
 }
 
-(() => {
-	slider.addEventListener('mousedown', start);
-	slider.addEventListener('touchstart', start);
+sliders.forEach(slider => {
+  // start
+	slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    startX = e.pageX || e.touches[0].pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;	
+  });
 
-	slider.addEventListener('mousemove', move);
-	slider.addEventListener('touchmove', move);
+	slider.addEventListener('touchstart', (e) => {
+    isDown = true;
+    startX = e.pageX || e.touches[0].pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;	
+  });
+
+  // move
+	slider.addEventListener('mousemove', (e) => {
+    if(!isDown) return;
+    e.preventDefault();
+    const x = e.pageX || e.touches[0].pageX - slider.offsetLeft;
+    const dist = (x - startX);
+    slider.scrollLeft = scrollLeft - dist;
+  });
+
+	slider.addEventListener('touchmove', (e) => {
+    if(!isDown) return;
+    e.preventDefault();
+    const x = e.pageX || e.touches[0].pageX - slider.offsetLeft;
+    const dist = (x - startX);
+    slider.scrollLeft = scrollLeft - dist;
+  });
 
 	slider.addEventListener('mouseleave', end);
 	slider.addEventListener('mouseup', end);
 	slider.addEventListener('touchend', end);
-})();
+});
+

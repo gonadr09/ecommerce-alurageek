@@ -44,12 +44,13 @@ const createCard = (product) => {
     const card = document.createElement('a');
     card.classList.add('category__product');
     card.href = `detail-product.html?id=${product.id}`;
-    card.innerHTML = createContentCard(product);
+    card.innerHTML = createContentCard(product)
+    card.setAttribute("draggable", "false");
     return card
 }
 
 const createContentCard = ({name, category, url, price}) => {
-    return `<img class="category__img" src="${url}" alt="${category}" onerror="imgErrorHTML(this)">
+    return `<img class="category__img" src="${url}" alt="${category}" onerror="imgErrorHTML(this)" draggable="false">
             <div class="category__text">
                 <p class="category__category">${category}</p>        
                 <h4 class="category__name">${name}</h4>
