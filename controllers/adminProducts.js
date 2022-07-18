@@ -48,11 +48,15 @@ const createContentCard = ({id, name, category, url, price}) => {
 };
 
 const deleteProduct = (e) => {
-    const id = e.target.id
     console.log(e)
-    clientService.deleteProduct(e.currentTarget.id)
+    console.log(e.currentTarget.parentNode.parentNode.parentNode)
+    const id = e.currentTarget.id;
+    const card = e.currentTarget.parentNode.parentNode.parentNode;
+    clientService.deleteProduct(id);
+    card.remove();
+    
 }
 
-renderProducts()
+renderProducts();
 
 // delete
