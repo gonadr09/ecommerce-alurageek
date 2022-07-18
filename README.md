@@ -4,7 +4,7 @@
      <img width="800" heigth="400" src="https://user-images.githubusercontent.com/91544872/153603780-b5e5b462-893b-471c-9b7f-7f57ad2aaff3.png">
 </p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5Z6Bjc2L7DM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Alt text](https://img.youtube.com/vi/5Z6Bjc2L7DM/0.jpg)](https://www.youtube.com/watch?v=5Z6Bjc2L7DM)
 
 # 🕹️ Alura Challange
 Juego Ahorcado para Challange nº2 de Alura Latam - Oracle ONE
