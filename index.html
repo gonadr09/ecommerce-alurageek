@@ -16,6 +16,13 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/page-icon.png" type="image/x-icon" />
 </head>
+
+<script>
+    function imgErrorHTML(image) {
+        image.src = './img/default-img.png';
+    }
+</script>
+
 <body>
     <header>
         <section class="menu">
@@ -28,7 +35,6 @@
                     <i class="fa-solid fa-magnifying-glass menu__search-icon"></i>
                 </div>
                 <div class="menu__cart-login-box">
-<!--                     <i class="fa-solid fa-cart-shopping menu__cart-icon"></i> -->
                     <a class="menu__button" href="./login.html">Ingresar <i class="fa-solid fa-user"></i></a>
                 </div>
             </nav>
@@ -46,208 +52,202 @@
     </header>
 
     <main class="main__eshop">
-        <section class="starwars category container">
+        <section class="category container">
             <div class="category__title-box">
-                <h2 class="category__title">StarWars</h2>
-                <a class="category__seemore" href="./search.html?search=StarWars">
+                <h2 class="category__title">Categoría</h2>
+                <a class="category__seemore" href="#">
                     <span>Ver todo</span>
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
             <div class="category__carousel">
-                <a class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-starwars1.png" alt="starwars">
+                <a class="category__product" href="./detail-product.html">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">StarWars</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <p class="category__detail">Ver producto <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
                     </div>
                 </a>
-                <a class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-starwars2.png" alt="starwars">
+                <a class="category__product" href="./detail-product.html">
+                    <img class="category__img" src="./img/prod-default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">StarWars</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <p class="category__detail">Ver producto <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
                     </div>
                 </a>
-                <a class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-starwars3.png" alt="starwars">
+                <a class="category__product" href="./detail-product.html">
+                    <img class="category__img" src="./img/prod-default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">StarWars</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <p class="category__detail">Ver producto <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
                     </div>
                 </a>
-                <a class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-starwars4.png" alt="starwars">
+                <a class="category__product" href="./detail-product.html">
+                    <img class="category__img" src="./img/prod-default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">StarWars</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <p class="category__detail">Ver producto <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
                     </div>
                 </a>
-                <a class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-starwars5.png" alt="starwars">
+                <a class="category__product" href="./detail-product.html">
+                    <img class="category__img" src="./img/prod-default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">StarWars</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <p class="category__detail">Ver producto <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
                     </div>
                 </a>
-                <!-- <a class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-starwars6.png" alt="starwars">
+                <a class="category__product" href="./detail-product.html">
+                    <img class="category__img" src="./img/prod-default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">StarWars</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <p class="category__detail">Ver producto <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
-                </div>    </a>
-             -->
+                    </div>
+                </a>
             </div>
         </section>
 
-        <section class="consolas category container">
+        <section class="category container">
             <div class="category__title-box">
-                <h2 class="category__title">Consolas</h2>
-                <a class="category__seemore" href="./search.html?search=Consolas">
+                <h2 class="category__title">Categoría</h2>
+                <a class="category__seemore" href="#">
                     <span>Ver todo</span>
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
             <div class="category__carousel">
-                <a class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-consolas1.png" alt="consolas">
+                <a class="category__product" href="./detail-product.html">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">Consolas</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <p class="category__detail">Ver producto <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
                     </div>
                 </a>
-                <a class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-consolas2.png" alt="consolas">
+                <a class="category__product" href="./detail-product.html">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">Consolas</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <p class="category__detail">Ver producto <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
                     </div>
                 </a>
-                <a class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-consolas3.png" alt="consolas">
+                <a class="category__product" href="./detail-product.html">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">Consolas</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <p class="category__detail">Ver producto <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
                     </div>
                 </a>
-                <a class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-consolas4.png" alt="consolas">
+                <a class="category__product" href="./detail-product.html">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">Consolas</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <p class="category__detail">Ver producto <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
                     </div>
                 </a>
-                <a class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-consolas5.png" alt="consolas">
+                <a class="category__product" href="./detail-product.html">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">Consolas</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <p class="category__detail">Ver producto <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
                     </div>
                 </a>
-                <!-- <a class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-consolas6.png" alt="consolas">
+                <a class="category__product" href="./detail-product.html">
+                    <img class="category__img" src="./img/prod-default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">Consolas</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <p class="category__detail">Ver producto <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
                     </div>
-                </a> -->
+                </a>
             </div>
         </section>
 
-        <section class="diversos category container">
+        <section class="category container">
             <div class="category__title-box">
-                <h2 class="category__title">Diversos</h2>
-                <a class="category__seemore" href="./search.html?search=Diversos">
+                <h2 class="category__title">Categoría</h2>
+                <a class="category__seemore" href="#">
                     <span>Ver todo</span>
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
             <div class="category__carousel">
-                <a class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-diversos1.png" alt="diversos">
+                <a class="category__product" href="./detail-product.html">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">Diversos</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <p class="category__detail">Ver producto <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
                     </div>
                 </a>
-                <a class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-diversos2.png" alt="diversos">
+                <a class="category__product" href="./detail-product.html">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">Diversos</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <p class="category__detail">Ver producto <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
                     </div>
                 </a>
-                <a class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-diversos3.png" alt="diversos">
+                <a class="category__product" href="./detail-product.html">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">Diversos</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <p class="category__detail">Ver producto <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
                     </div>
                 </a>
-                <a class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-diversos4.png" alt="diversos">
+                <a class="category__product" href="./detail-product.html">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">Diversos</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <p class="category__detail">Ver producto <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
                     </div>
                 </a>
-                <a class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-diversos5.png" alt="diversos">
+                <a class="category__product" href="./detail-product.html">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">Diversos</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <p class="category__detail">Ver producto <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
                     </div>
                 </a>
-                <!--<a class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-diversos6.png" alt="diversos">
+                <a class="category__product" href="./detail-product.html">
+                    <img class="category__img" src="./img/prod-default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">Diversos</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <p class="category__detail">Ver producto <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
                     </div>
-                </a> -->
+                </a>
             </div>
-
-<!-- 
-<div class="category__actions-box">
-    <button class="category__addcart">Agregar al <i class="fa-solid fa-cart-shopping"></i></button>
-</div>
--->
         </section>
 
     </main>
@@ -265,14 +265,16 @@
             </ul>
             <div class="footer__form-box">
                 <h3 class="footer__form-title">Hable con nosotros</h3>
-                <form class="footer__form" action="">
+                <form class="footer__form" action="./message-sent.html">
                     <label class="footer__form-label" for="name" >
                         <p class="footer__form-field">Nombre:</p>
-                        <input class="footer__form-input" type="text" id="name" name="name" autocomplete="off" required>
+                        <input class="footer__form-input form-input" type="text" id="name" name="name" autocomplete="off" required maxlength="40">
+                        <span class="input-message-error">Este campo no es válido</span>
                     </label>
                     <label class="footer__form-label" for="message">
                         <p class="footer__form-field">Mensaje:</p>
-                        <textarea class="footer__form-input" type="text" id="message" name="message" rows="5" autocomplete="off" required></textarea>
+                        <textarea class="footer__form-input form-input" type="text" id="message" name="message" rows="5" autocomplete="off" required maxlength="120"></textarea>
+                        <span class="input-message-error">Este campo no es válido</span>
                     </label>
                     <button class="footer__form-submit" type="submit" id="submit">Enviar mensaje</button>
                 </form>
@@ -284,11 +286,12 @@
     </footer>
     <script src="./controllers/indexProducts.js" type="module"></script>
     <script src="./js/searchButton.js"></script>
+    <script src="./js/forms.js"></script>
 <!--     <script src="./js/touchSlider.js"></script> -->
 </body>
 </html>
-<!--
-
-    https://www.figma.com/file/NUd563IRcuwUGyFGTwPP5W/AluraGeek?node-id=1%3A34
-
+<!-- 
+https://fs-prod-cdn.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_YoshisCraftedWorld_image500w.jpg
+https://fs-prod-cdn.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_AnimalCrossingNewHorizons_image500w.jpg
+https://fs-prod-cdn.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_Bayonetta_SpecialEdition_image500w.jpg
 -->

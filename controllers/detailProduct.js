@@ -28,14 +28,3 @@ const createCard = ({name, category, url, price, description}) => {
 }
 
 getProduct(id);
-
-const a = `
-<section class="product container">
-<img src="./img/prod-consolas1.png" alt="consolas">
-<div class="product__detail-container">
-    <h2 class="product__name">Producto xyz</h2>
-    <p class="product__price">$ 2.499</p>
-    <p class="product__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam soluta sint blanditiis iusto libero autem corporis voluptates odit nisi esse aperiam excepturi, dicta quisquam dignissimos ab commodi corrupti nulla quidem dolorum unde, obcaecati ullam explicabo facilis. Maiores reiciendis amet quo pariatur quibusdam inventore minus molestias? Dolores quibusdam magnam delectus cupiditate?</p>
-</div>
-</section>
-`

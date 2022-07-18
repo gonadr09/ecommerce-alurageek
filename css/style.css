@@ -5,6 +5,7 @@
     --color-blue: #2A7AE4;
     --color-dark-blue: #1B65C5;
     --color-red: #e42a2a;
+    --color-error: #ffe8e8;
     --size-img-width: 185px;
     --size-img-height: 185px; 
 }
@@ -44,6 +45,12 @@ body{
     border: none;
     outline: none;
     text-align: center;
+}
+
+.sent-message{
+    font-size: .9rem;
+    color: #808080;
+    margin-top: 1rem;
 }
 
 /*
@@ -255,6 +262,7 @@ body{
     border-radius: .2rem;
     color: #000;
     transition: 0.2s;
+    width: var(--size-img-width);
 }
 
 .category__product:hover{
@@ -273,7 +281,6 @@ body{
 }
 
 .category__category{
-
     font-size: .8rem;
     color: #000000cc;
 }
@@ -281,7 +288,7 @@ body{
 .category__name{
     font-size: 1rem;
     font-weight: 500;
-    margin: .2rem 0;
+    margin: .2rem 0 .3rem 0;
 }
 
 .category__price{
@@ -487,17 +494,22 @@ LOGIN
     max-width: 400px;
 }
 
-.login__form-input{
-    width: 100%;
-    margin-bottom: 1.5rem;
+.login__form-label{
+    width: inherit;
+    margin-bottom: 1rem;
     background-color: #FFF;
     border-radius: 5px;
     padding: 1rem;
-    font-size: .9rem;
+    font-size: .8rem;
     color: #808080;
+}
+
+.login__form-input{
+    background-color: transparent;
     outline: none;
     border: none;
     resize: none;
+    width: 100%;
 }
 
 .login__form-input::placeholder{
@@ -721,11 +733,12 @@ DETAIL PRODUCT
 }
 
 .product img{
-    width: calc(var(--size-img-width)*2.5);
-    height: calc(var(--size-img-height)*2.5);
+    width: calc(var(--size-img-width)*3);
+    height: calc(var(--size-img-height)*1.75);
     border-radius: 5px;
-
-    box-shadow: 0 0 25px #00000040;
+/*     box-shadow: 0 0 25px #00000040; */
+    filter: drop-shadow(0 0 25px #00000040);
+    object-fit: cover;
 }
 
 .product__detail-container{
@@ -801,4 +814,21 @@ DETAIL PRODUCT
         width: 100%;
         height: auto;
     }
+}
+
+/* form */
+
+.invalid_input{
+    background-color: var(--color-error);
+    color: var(--color-red);
+    border: 1px solid var(--color-red);
+}
+
+.input-message-error{
+    display: none;
+    font-size: .7rem;
+}
+
+.invalid_input .input-message-error{
+    display: block;
 }

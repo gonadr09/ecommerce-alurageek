@@ -1,4 +1,4 @@
-import { clientService } from "../services/client-service.js";
+import { clientService } from "../services/client-service.js"; 
 
 const productsBox = document.querySelector('.all-products__stock')
 
@@ -13,6 +13,7 @@ const renderProducts = async () => {
 
 const showProducts = (arrProducts) => {
     if(arrProducts.length > 0) {
+        productsBox.innerHTML = '';
         arrProducts.forEach(product => {
             const card = createCard(product);
             productsBox.appendChild(card);
@@ -33,7 +34,7 @@ const createCard = (product) => {
 
 const createContentCard = ({id, name, category, url, price}) => {
     // agregar ruta detail-product con ID
-    return `<img class="category__img" src="${url}" alt="${category}">
+    return `<img class="category__img" src="${url}" alt="${category}" onerror="imgErrorHTML(this)">
             <div class="category__text">        
                 <p class="category__category">${category}</p>
                 <h4 class="category__name">${name}</h4>

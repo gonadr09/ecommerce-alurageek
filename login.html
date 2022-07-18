@@ -20,9 +20,9 @@
     <header>
         <section class="menu">
             <nav class="menu__nav container">
-                <figure class="menu__logo-box">
+                <a class="menu__logo-box" href="./index.html">
                     <img class="menu__logo-img" src="./img/Logo.svg" alt="alurageek">
-                </figure>
+                </a>
                 <div class="menu__search-box">
                     <input type="search" class="menu__search-input" placeholder="¿Qué deseas buscar?">
                     <i class="fa-solid fa-magnifying-glass menu__search-icon"></i>
@@ -40,10 +40,14 @@
             <div class="login__container container">
                 <h1 class="login__form-title">Iniciar Sesión</h1>
                 <form class="login__form" action="./admin.html">
-                    <label class="login__form-label" for="email" ></label>
-                    <input class="login__form-input" type="email" id="email" name="email" autocomplete="off" placeholder="Escriba su correo electrónico">
-                    <label class="login__form-label" for="password" ></label>
-                    <input class="login__form-input" type="password" id="password" name="password" autocomplete="off" placeholder="Escriba su contraseña">
+                    <label class="login__form-label" for="email">
+                        <input class="login__form-input form-input" type="email" id="email" name="email" autocomplete="off" placeholder="Escriba su correo electrónico" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" title="Ingrese un correo válido">
+                        <span class="input-message-error">Este campo no es válido</span>
+                    </label>
+                        <label class="login__form-label" for="password">
+                        <input class="login__form-input form-input" type="password" id="password" name="password" autocomplete="off" placeholder="Escriba su contraseña" required>
+                        <span class="input-message-error">Este campo no es válido</span>
+                    </label>
                     <button class="login__form-submit" type="submit" id="login">Ingresar</button>
                 </form>
             </div>
@@ -64,14 +68,16 @@
             </ul>
             <div class="footer__form-box">
                 <h3 class="footer__form-title">Hable con nosotros</h3>
-                <form class="footer__form" action="">
+                <form class="footer__form" action="./message-sent.html">
                     <label class="footer__form-label" for="name" >
                         <p class="footer__form-field">Nombre:</p>
-                        <input class="footer__form-input" type="text" id="name" name="name" autocomplete="off" required>
+                        <input class="footer__form-input form-input" type="text" id="name" name="name" autocomplete="off" required maxlength="40">
+                        <span class="input-message-error">Este campo no es válido</span>
                     </label>
                     <label class="footer__form-label" for="message">
                         <p class="footer__form-field">Mensaje:</p>
-                        <textarea class="footer__form-input" type="text" id="message" name="message" rows="5" autocomplete="off" required></textarea>
+                        <textarea class="footer__form-input form-input" type="text" id="message" name="message" rows="5" autocomplete="off" required maxlength="120"></textarea>
+                        <span class="input-message-error">Este campo no es válido</span>
                     </label>
                     <button class="footer__form-submit" type="submit" id="submit">Enviar mensaje</button>
                 </form>
@@ -81,7 +87,8 @@
             <a href="https://gonadr09.github.io/Portafolio-Alura/">Developed by GDR | Dev. 💻</a>
         </div>
     </footer>
-
+    <script src="./js/searchButton.js"></script>
+    <script src="./js/forms.js"></script>
 </body>
 </html>
 <!--

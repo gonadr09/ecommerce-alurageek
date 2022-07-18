@@ -1,9 +1,9 @@
 import { clientService } from "../services/client-service.js";
 
 const url = new URL(window.location);
-const search = url.searchParams.get('search')
+const search = url.searchParams.get('search');
 
-const title = document.querySelector('.category__title')
+const title = document.querySelector('.category__title');
 const productsBox = document.querySelector('.all-products__stock');
 
 title.textContent = `Resultados de la busqueda: "${search}"`;
@@ -11,10 +11,11 @@ title.textContent = `Resultados de la busqueda: "${search}"`;
 const getProducts = async (search) => {
     try {
         const arrProducts = await clientService.readProducts();
-        console.log(arrProducts)
-        findProducts(arrProducts, search)
+        console.log(arrProducts);
+        productsBox.innerHTML = '';
+        findProducts(arrProducts, search);
     } catch (error) {
-        console.log(error)
+        console.log(error);
     }
 }
 
@@ -51,7 +52,7 @@ const createCard = (product) => {
 
 const createContentCard = ({name, category, url, price}) => {
     // agregar ruta detail-product con ID
-    return `<img class="category__img" src="${url}" alt="${category}">
+    return `<img class="category__img" src="${url}" alt="${category}" onerror="imgErrorHTML(this)">
             <div class="category__text">
                 <p class="category__category">${category}</p>        
                 <h4 class="category__name">${name}</h4>

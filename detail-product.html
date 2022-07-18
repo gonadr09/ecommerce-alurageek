@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraGeek | Login</title>
+    <title>AluraGeek | Detalle Producto</title>
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/f570856479.js" crossorigin="anonymous"></script>
     <!-- Font -->
@@ -16,13 +16,20 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/page-icon.png" type="image/x-icon" />
 </head>
+
+<script>
+    function imgErrorHTML(image) {
+        image.src = './img/default-img.png';
+    }
+</script>
+
 <body>
     <header>
         <section class="menu">
             <nav class="menu__nav container">
-                <figure class="menu__logo-box">
+                <a class="menu__logo-box" href="./index.html">
                     <img class="menu__logo-img" src="./img/Logo.svg" alt="alurageek">
-                </figure>
+                </a>
                 <div class="menu__search-box">
                     <input type="search" class="menu__search-input" placeholder="¿Qué deseas buscar?">
                     <i class="fa-solid fa-magnifying-glass menu__search-icon"></i>
@@ -38,7 +45,7 @@
         
         <section class="container">
             <div class="product">
-                <img src="./img/prod-consolas1.png" alt="consolas">
+                <img src="./img/prod-consolas1.png" alt="consolas" onerror="imgErrorHTML(this)">
                 <div class="product__detail-container">
                     <p class="product__category">Categoría: StarWars</p>
                     <h2 class="product__name">Producto xyz</h2>
@@ -66,14 +73,16 @@
             </ul>
             <div class="footer__form-box">
                 <h3 class="footer__form-title">Hable con nosotros</h3>
-                <form class="footer__form" action="">
+                <form class="footer__form" action="./message-sent.html">
                     <label class="footer__form-label" for="name" >
                         <p class="footer__form-field">Nombre:</p>
-                        <input class="footer__form-input" type="text" id="name" name="name" autocomplete="off" required>
+                        <input class="footer__form-input form-input" type="text" id="name" name="name" autocomplete="off" required maxlength="40">
+                        <span class="input-message-error">Este campo no es válido</span>
                     </label>
                     <label class="footer__form-label" for="message">
                         <p class="footer__form-field">Mensaje:</p>
-                        <textarea class="footer__form-input" type="text" id="message" name="message" rows="5" autocomplete="off" required></textarea>
+                        <textarea class="footer__form-input form-input" type="text" id="message" name="message" rows="5" autocomplete="off" required maxlength="120"></textarea>
+                        <span class="input-message-error">Este campo no es válido</span>
                     </label>
                     <button class="footer__form-submit" type="submit" id="submit">Enviar mensaje</button>
                 </form>
@@ -83,12 +92,8 @@
             <a href="https://gonadr09.github.io/Portafolio-Alura/">Developed by GDR | Dev. 💻</a>
         </div>
     </footer>
-    <script src="./controllers/detailProduct.js" type="module"></script>
     <script src="./js/searchButton.js"></script>
+    <script src="./js/forms.js"></script>
+    <script src="./controllers/detailProduct.js" type="module"></script>
 </body>
 </html>
-<!--
-
-    https://www.figma.com/file/NUd563IRcuwUGyFGTwPP5W/AluraGeek?node-id=1%3A34
-
--->

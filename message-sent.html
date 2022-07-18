@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraGeek | Búsqueda</title>
+    <title>AluraGeek | Mensaje enviado</title>
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/f570856479.js" crossorigin="anonymous"></script>
     <!-- Font -->
@@ -16,13 +16,6 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/page-icon.png" type="image/x-icon" />
 </head>
-
-<script>
-    function imgErrorHTML(image) {
-        image.src = './img/default-img.png';
-    }
-</script>
-
 <body>
     <header>
         <section class="menu">
@@ -39,45 +32,16 @@
                 </div>
             </nav>
         </section>
-
     </header>
 
-    <main class="main__eshop">
-
-        <section class="all-products category container">
-            <div class="category__title-box">
-                <h2 class="category__title">Resultados de la búsqueda</h2>
+    <main>
+        
+        <section class="login">
+            <div class="login__container container">
+                <h1 class="login__form-title">Mensaje enviado correctamente</h1>
+                <i class="fa-solid fa-paper-plane medium-icon"></i>
+                <p class="sent-message">*Esta web es de prueba, su mensaje realmente no fue enviado.</p>
             </div>
-            <div class="all-products__stock">
-                <a class="category__product" href="#">
-                    <img class="category__img" src="./img/default-img.png" alt="starwars">
-                    <div class="category__text">
-                        <p class="category__category">Categoría test</p>
-                        <h4 class="category__name">Nombre test</h4>
-                        <p class="category__price">$ 9999</p>
-                        <p class="category__detail">Ver producto <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
-                    </div>
-                </a>
-                <a class="category__product" href="#">
-                    <img class="category__img" src="./img/default-img.png" alt="starwars">
-                    <div class="category__text">
-                        <p class="category__category">Categoría test</p>
-                        <h4 class="category__name">Nombre test</h4>
-                        <p class="category__price">$ 9999</p>
-                        <p class="category__detail">Ver producto <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
-                    </div>
-                </a>
-                <a class="category__product" href="#">
-                    <img class="category__img" src="./img/default-img.png" alt="starwars">
-                    <div class="category__text">
-                        <p class="category__category">Categoría test</p>
-                        <h4 class="category__name">Nombre test</h4>
-                        <p class="category__price">$ 9999</p>
-                        <p class="category__detail">Ver producto <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
-                    </div>
-                </a>
-            </div>
-
         </section>
 
     </main>
@@ -111,11 +75,10 @@
             </div>
         </div>
         <div class="footer__developed">
-            <a href="https://gonadr09.github.io/Portafolio-Alura/" target="_blank">Developed by GDR | Dev. 💻</a>
+            <a href="https://gonadr09.github.io/Portafolio-Alura/">Developed by GDR | Dev. 💻</a>
         </div>
     </footer>
     <script src="./js/searchButton.js"></script>
     <script src="./js/forms.js"></script>
-    <script src="./controllers/searchProducts.js" type="module"></script>
 </body>
 </html>

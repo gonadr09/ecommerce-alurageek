@@ -16,13 +16,20 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/page-icon.png" type="image/x-icon" />
 </head>
+
+<script>
+    function imgErrorHTML(image) {
+        image.src = './img/default-img.png';
+    }
+</script>
+
 <body>
     <header>
         <section class="menu">
             <nav class="menu__nav container">
-                <figure class="menu__logo-box">
+                <a class="menu__logo-box" href="./index.html">
                     <img class="menu__logo-img" src="./img/Logo.svg" alt="alurageek">
-                </figure>
+                </a>
                 <div class="menu__search-box">
                     <input type="search" class="menu__search-input" placeholder="¿Qué deseas buscar?">
                     <i class="fa-solid fa-magnifying-glass menu__search-icon"></i>
@@ -43,228 +50,246 @@
             </div>
             <div class="all-products__stock">
                 <div class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-starwars1.png" alt="starwars">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">StarWars</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <div class="category__actions-box">
-                            <a class="category__product-edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a class="category__product-edit" href="./edit-product.html"><i class="fa-solid fa-pen-to-square"></i></a>
                             <button class="category__product-delete"><i class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-starwars2.png" alt="starwars">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">StarWars</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <div class="category__actions-box">
-                            <a class="category__product-edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a class="category__product-edit" href="./edit-product.html"><i class="fa-solid fa-pen-to-square"></i></a>
                             <button class="category__product-delete"><i class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-starwars3.png" alt="starwars">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">StarWars</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <div class="category__actions-box">
-                            <a class="category__product-edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a class="category__product-edit" href="./edit-product.html"><i class="fa-solid fa-pen-to-square"></i></a>
                             <button class="category__product-delete"><i class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-starwars4.png" alt="starwars">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">StarWars</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <div class="category__actions-box">
-                            <a class="category__product-edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a class="category__product-edit" href="./edit-product.html"><i class="fa-solid fa-pen-to-square"></i></a>
                             <button class="category__product-delete"><i class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-starwars5.png" alt="starwars">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">StarWars</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <div class="category__actions-box">
-                            <a class="category__product-edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a class="category__product-edit" href="./edit-product.html"><i class="fa-solid fa-pen-to-square"></i></a>
                             <button class="category__product-delete"><i class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-starwars6.png" alt="starwars">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">StarWars</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <div class="category__actions-box">
-                            <a class="category__product-edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a class="category__product-edit" href="./edit-product.html"><i class="fa-solid fa-pen-to-square"></i></a>
                             <button class="category__product-delete"><i class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-consolas1.png" alt="consolas">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">Consolas</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <div class="category__actions-box">
-                            <a class="category__product-edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a class="category__product-edit" href="./edit-product.html"><i class="fa-solid fa-pen-to-square"></i></a>
                             <button class="category__product-delete"><i class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-consolas2.png" alt="consolas">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">Consolas</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <div class="category__actions-box">
-                            <a class="category__product-edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a class="category__product-edit" href="./edit-product.html"><i class="fa-solid fa-pen-to-square"></i></a>
                             <button class="category__product-delete"><i class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-consolas3.png" alt="consolas">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">Consolas</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <div class="category__actions-box">
-                            <a class="category__product-edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a class="category__product-edit" href="./edit-product.html"><i class="fa-solid fa-pen-to-square"></i></a>
                             <button class="category__product-delete"><i class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-consolas4.png" alt="consolas">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">Consolas</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <div class="category__actions-box">
-                            <a class="category__product-edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a class="category__product-edit" href="./edit-product.html"><i class="fa-solid fa-pen-to-square"></i></a>
                             <button class="category__product-delete"><i class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-consolas5.png" alt="consolas">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">Consolas</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <div class="category__actions-box">
-                            <a class="category__product-edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a class="category__product-edit" href="./edit-product.html"><i class="fa-solid fa-pen-to-square"></i></a>
                             <button class="category__product-delete"><i class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-consolas6.png" alt="consolas">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">Consolas</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <div class="category__actions-box">
-                            <a class="category__product-edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a class="category__product-edit" href="./edit-product.html"><i class="fa-solid fa-pen-to-square"></i></a>
                             <button class="category__product-delete"><i class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-diversos1.png" alt="diversos">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">Diversos</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <div class="category__actions-box">
-                            <a class="category__product-edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a class="category__product-edit" href="./edit-product.html"><i class="fa-solid fa-pen-to-square"></i></a>
                             <button class="category__product-delete"><i class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-diversos2.png" alt="diversos">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">Diversos</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <div class="category__actions-box">
-                            <a class="category__product-edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a class="category__product-edit" href="./edit-product.html"><i class="fa-solid fa-pen-to-square"></i></a>
                             <button class="category__product-delete"><i class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-diversos3.png" alt="diversos">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">Diversos</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <div class="category__actions-box">
-                            <a class="category__product-edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a class="category__product-edit" href="./edit-product.html"><i class="fa-solid fa-pen-to-square"></i></a>
                             <button class="category__product-delete"><i class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-diversos4.png" alt="diversos">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">Diversos</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <div class="category__actions-box">
-                            <a class="category__product-edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a class="category__product-edit" href="./edit-product.html"><i class="fa-solid fa-pen-to-square"></i></a>
                             <button class="category__product-delete"><i class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-diversos5.png" alt="diversos">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">Diversos</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <div class="category__actions-box">
-                            <a class="category__product-edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a class="category__product-edit" href="./edit-product.html"><i class="fa-solid fa-pen-to-square"></i></a>
                             <button class="category__product-delete"><i class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="category__product" href="#">
-                    <img class="category__img" src="./img/prod-diversos6.png" alt="diversos">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
                     <div class="category__text">
-                        <p class="category__category">Diversos</p>
+                        <p class="category__category">Categoría</p>
                         <h4 class="category__name">Producto xyz</h4>
                         <p class="category__price">$ 2.499</p>
                         <div class="category__actions-box">
-                            <a class="category__product-edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a class="category__product-edit" href="./edit-product.html"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <button class="category__product-delete"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="category__product" href="#">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
+                    <div class="category__text">
+                        <p class="category__category">Categoría</p>
+                        <h4 class="category__name">Producto xyz</h4>
+                        <p class="category__price">$ 2.499</p>
+                        <div class="category__actions-box">
+                            <a class="category__product-edit" href="./edit-product.html"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <button class="category__product-delete"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="category__product" href="#">
+                    <img class="category__img" src="./img/default-img.png" alt="alurageek" onerror="imgErrorHTML(this)">
+                    <div class="category__text">
+                        <p class="category__category">Categoría</p>
+                        <h4 class="category__name">Producto xyz</h4>
+                        <p class="category__price">$ 2.499</p>
+                        <div class="category__actions-box">
+                            <a class="category__product-edit" href="./edit-product.html"><i class="fa-solid fa-pen-to-square"></i></a>
                             <button class="category__product-delete"><i class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
-
-<!-- 
-<div class="category__actions-box">
-    <button class="category__addcart">Agregar al <i class="fa-solid fa-cart-shopping"></i></button>
-</div>
--->
         </section>
 
     </main>
@@ -282,14 +307,16 @@
             </ul>
             <div class="footer__form-box">
                 <h3 class="footer__form-title">Hable con nosotros</h3>
-                <form class="footer__form" action="">
+                <form class="footer__form" action="./message-sent.html">
                     <label class="footer__form-label" for="name" >
                         <p class="footer__form-field">Nombre:</p>
-                        <input class="footer__form-input" type="text" id="name" name="name" autocomplete="off" required>
+                        <input class="footer__form-input form-input" type="text" id="name" name="name" autocomplete="off" required maxlength="40">
+                        <span class="input-message-error">Este campo no es válido</span>
                     </label>
                     <label class="footer__form-label" for="message">
                         <p class="footer__form-field">Mensaje:</p>
-                        <textarea class="footer__form-input" type="text" id="message" name="message" rows="5" autocomplete="off" required></textarea>
+                        <textarea class="footer__form-input form-input" type="text" id="message" name="message" rows="5" autocomplete="off" required maxlength="120"></textarea>
+                        <span class="input-message-error">Este campo no es válido</span>
                     </label>
                     <button class="footer__form-submit" type="submit" id="submit">Enviar mensaje</button>
                 </form>
@@ -300,11 +327,7 @@
         </div>
     </footer>
     <script src="./js/searchButton.js"></script>
+    <script src="./js/forms.js"></script>
     <script src="./controllers/adminProducts.js" type="module"></script>
 </body>
 </html>
-<!--
-
-    https://www.figma.com/file/NUd563IRcuwUGyFGTwPP5W/AluraGeek?node-id=1%3A34
-
--->

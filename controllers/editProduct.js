@@ -6,7 +6,7 @@ const form = document.querySelector('.add-product__form');
 
 const getProduct = async (id) => {
     try {
-        const arrProduct = await clientService.detailProduct(id);
+        const arrProduct = await clientService.readProduct(id);
         createCard(arrProduct)
     } catch (error) {
         console.log(error)
