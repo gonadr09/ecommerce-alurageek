@@ -17,7 +17,6 @@ const filterProducts = (dataProducts) => {
         if(categoryProducts.length > 0){
             const main = document.querySelector(`main`);
             const section = main.children[index];
-            console.log(main.children[0])
             writeTitle(section, category);
             showProducts(categoryProducts, section, index)
         } else {

@@ -6,7 +6,6 @@ const id = url.searchParams.get('id')
 const getProduct = async (id) => {
     try {
         const arrProduct = await clientService.readProduct(id);
-        console.log(arrProduct.length)
         createCard(arrProduct)
 
     } catch (error) {

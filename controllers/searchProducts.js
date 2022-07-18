@@ -11,7 +11,6 @@ title.textContent = `Resultados de la busqueda: "${search}"`;
 const getProducts = async (search) => {
     try {
         const arrProducts = await clientService.readProducts();
-        console.log(arrProducts);
         productsBox.innerHTML = '';
         findProducts(arrProducts, search);
     } catch (error) {
@@ -25,13 +24,11 @@ const findProducts = (arrProducts, search) => {
         const name = product.name.toLowerCase();
         const category = product.category.toLowerCase();
         const regex = search.toLowerCase(); 
-        // console.log(`name: ${name.includes(regex)} | category: ${category.includes(regex)}`)
         if(name.includes(regex) || category.includes(regex)){
             showProduct(product);
             coincidence++;
         }
     })
-    console.log(coincidence)
     if(coincidence == 0){
         noCoincidence();
     }

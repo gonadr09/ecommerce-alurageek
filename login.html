@@ -39,7 +39,7 @@
         <section class="login">
             <div class="login__container container">
                 <h1 class="login__form-title">Iniciar Sesión</h1>
-                <form class="login__form" action="./admin.html">
+                <form class="login__form" action="#">
                     <label class="login__form-label" for="email">
                         <input class="login__form-input form-input" type="email" id="email" name="email" autocomplete="off" placeholder="Escriba su correo electrónico" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" title="Ingrese un correo válido">
                         <span class="input-message-error">Este campo no es válido</span>
@@ -49,6 +49,7 @@
                         <span class="input-message-error">Este campo no es válido</span>
                     </label>
                     <button class="login__form-submit" type="submit" id="login">Ingresar</button>
+                    <p class="login-message-error">*El email y/o la contraseña es incorrecto/a</p>
                 </form>
             </div>
         </section>
@@ -89,6 +90,7 @@
     </footer>
     <script src="./js/searchButton.js"></script>
     <script src="./js/forms.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>
 <!--
