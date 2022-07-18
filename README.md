@@ -1,62 +1,33 @@
 # Alura Challange | Oracle One | Front-end | AluraGeek Latam
 ---
-<p align="center" >
-     <img width="800" heigth="400" src="https://user-images.githubusercontent.com/91544872/153603780-b5e5b462-893b-471c-9b7f-7f57ad2aaff3.png">
-</p>
-
+Haz clic en la imagen para ver la demostración en Youtube 👇
 [![Alt text](https://img.youtube.com/vi/5Z6Bjc2L7DM/0.jpg)](https://www.youtube.com/watch?v=5Z6Bjc2L7DM)
 
-# 🕹️ Alura Challange
-Juego Ahorcado para Challange nº2 de Alura Latam - Oracle ONE
+-----
+## 💡 Descripción
+La empresa AluraGeek necesita llegar a más clientes y aumentar su nivel de ventas, por lo que quieren implementar un e-commerce, llevar a la empresa al siguiente nivel y volverse más digital.
+
+Para ello están pidiendo nuestra ayuda como desarrolladores, el e-commerce debe contener los siguientes requisitos:
+- Una página de inicio que contiene un botón de inicio de sesión y un motor de búsqueda de productos ofrecidos por la empresa.
+- Un banner que contenga descuentos, promociones o informaciónes relevante del momento.
+- Una galería con información del producto, como imagen, nombre del producto, precio y un enlace a la página de descripción del producto.
+- Una página de producto que contiene la imagen, el nombre, la descripción y el precio.
+- Un pie de página con un formulario de contacto y otras informaciónes relevantes.
+- Un formulário de iniciar sesión para autenticar a los usuarios que quieran acceder al menu administrador.
+- Menú de administrador para que puedan agregar, editar, buscar o eliminar productos de la tienda.
+
+Es muy importante que el sitio sea adaptable para que los clientes puedan comprar fácilmente a través de dispositivos móviles.
+
+-----
+## 🔒 Login
+Las credenciales para loguearse en la administración son:
+email: test@alura.com
+password: alura123
 
 -----
 ## 💻 Lenguajes
 ![HtmlCssJs](https://raw.githubusercontent.com/gonadr09/Juego-Ahorcado-Alura/master/img/954554.png)
 
 -----
-## 💡 Descripción
-El desafío consiste en construir una página web que contenga el juego del ahorcado, se presenta un menú inicial donde se puede elegir entre iniciar el juego o añadir una palabra a la lista. El juego consiste en presentar un palabra oculta que se irá descifrando a medida que el usuario seleccione una letra, si la letra forma parte de la palabra se mostrará su posición en la palabra y las veces que aparece, si en caso contrario la letra no pertenece a la palabra se pierde un intento y comienza a dibujarse al ahorcado, la cantidad de intentos posibles son hasta que la figura se complete, en total son 9 intentos, si la figura se completa se pierde el juego pero si completan la palabra antes de completar la figura el juego se gana.
-
------
-## ✔️ Requisitos:
-- Debe funcionar solo con letras mayúsculas;
-- No deben ser utilizadas letras con acentos ni caracteres especiales;
-- Al completar o dibujo de la horca, debe ser mostrado un mensaje "Fin del juego" en la pantalla;
-- Si se completa la palabra correcta antes de que se acaben los intentos, debe ser mostrado un mensaje de "Ganaste, Felicidades!" en la pantalla.
-- La página debe tener los guiones indicando cada letra da palabra, separados por un espacio;
-- Para comenzar el juego la página debe tener un botón de "Iniciar Juego";
-- No debe ser posible escribir números dentro del juego.
-- Las letras equivocadas deben aparecer en la pantalla, pero no pueden aparecer de forma repetida;
-- Las letras correctas deben aparecer en la pantalla encima de los guiones, en la posición correcta em relación a la palabra.
-- (EXTRA) La página debe tener un campo para inserción de texto con la finalidad de adicionar nuevas palabras al juego, e un botón "Agregar palabra".
-
-### ¡Challange AluraGeek! :
-
-#### Marca este proyecto con una estrella ⭐
-#### Sigue las lecciones y las instrucciones de contenido 📚
-#### Visita la página del Desafío [¡Haciendo clic aquí!](https://www.aluracursos.com/challenges/oracle-one-front-end) 📃
-
-## ¿Cómo incluir mi proyecto en este Challenge?
----
-
-1) Publicar el proyecto en GitHub
-2) Publicarlo en GitHub Pages: [¿Cómo publicar mi proyecto con GitHub Pages?](https://docs.github.com/pt/pages/getting-started-with-github-pages/creating-a-github-pages-site) 
-3) Utilizar el tema/topic **challengeonealurageeklatam**
-
-Ve a la pestaña "Acerca" o "About" de tu proyecto en el menú de la izquierda dentro de tu repositorio de GitHub
-Incluye la etiqueta "**challengeonealurageeklatam**"
-
-![gif-vitrine](https://user-images.githubusercontent.com/91544872/153601047-62aee6cb-e3cf-42b3-92c3-7130c996113f.gif)
-
-## ¿Cómo hago la entrega final de mi proyecto?
----
-
-4) Coloca tus datos en el formulario de entrega con el **link del proyecto publicado con GitHub Pages**
-🔹 [link del formulario](https://lp.alura.com.br/alura-latam-lp-entrega-de-challenge-one-esp)
-![formulario-latam](https://user-images.githubusercontent.com/91544872/153603386-7624de4a-8838-4fbc-9466-54222ef3f672.png)
-
-
-5) Accede a tu correo electrónico para conseguir tu Insignia Exclusiva para este Challenge 🏆
-6) ¡No olvides publicar un link o un vídeo de tu proyecto en Linkedin! 🏁
-
-     <a href="https://www.linkedin.com/company/alura-latam/mycompany/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+## 👾 Link a website
+https://gonadr09.github.io/ecommerce-alurageek/index.html
